@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SweetDelights Cakes</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+</head>
+<body>  
+
+    <div class="top-title-container" id="titleBlock">
+        <div class="top-title">EVERYTHING IS CAKE</div>
+        <div class="heart">❤️</div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="model-container">
+        <model-viewer
+            id="cakeModel"
+            src="assets/wedding-cake.glb"
+            alt="Wedding Cake 3D Model"
+            shadow-intensity="1"
+            exposure="1"
+            environment-image="neutral"
+            interaction-policy="none"
+            disable-zoom
+            camera-orbit="0deg 60deg 100%">
+        </model-viewer>
+
+        <model-viewer
+            id="cakeModel2"
+            src="assets/chocolate.glb"
+            alt="Chocolate Cake 3D Model"
+            shadow-intensity="1"
+            exposure="1"
+            environment-image="neutral"
+            interaction-policy="none"
+            disable-zoom
+            camera-orbit="0deg 60deg 100%">
+        </model-viewer>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="homepage" id="homepage">
+        <h1>Welcome to SweetDelights</h1>
+        <p>At SweetDelights, we craft cakes that are as beautiful as they are delicious. From weddings to birthdays, our mission is to bring joy and sweetness to every celebration.</p>
+        <p>Using the finest ingredients and artistic design, we ensure each cake is a memorable centerpiece for your special moments.</p>
+
+        <div class="store-section">
+            <h2>Our Featured Cakes</h2>
+            <div class="store-grid">
+                <div class="store-item">
+                    <h3>Wedding Cake</h3>
+                    <p>$120 - Elegant layered cake for weddings.</p>
+                </div>
+                <div class="store-item">
+                    <h3>Chocolate Cake</h3>
+                    <p>$45 - Rich chocolate cake with ganache.</p>
+                </div>
+                <div class="store-item">
+                    <h3>Birthday Cake</h3>
+                    <p>$60 - Fun and colorful birthday cake.</p>
+                </div>
+                <div class="store-item">
+                    <h3>Custom Cake</h3>
+                    <p>$90 - Personalized cake for any occasion.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 SweetDelights | All Rights Reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
